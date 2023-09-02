@@ -10,10 +10,15 @@ router.get("/test", (req, res) => res.json({ message: "Test Route Working" }));
 // user
 
 // register
+
+// router.post("/register", authController.register);
 router.post("/register", authController.register);
 
+// router.post("/register", (req, res) => {
+//   // Your code to handle the POST request goes here
+// });
+
 // login
-router.post("/login", authController.login);
 
 // logout
 // refresh
