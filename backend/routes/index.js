@@ -4,6 +4,7 @@ const authController = require("../controller/authController");
 const router = express.Router();
 
 // testing
+router.get("/", (req, res) => res.json({ message: "Test Route Working" }));
 
 router.get("/test", (req, res) => res.json({ message: "Test Route Working" }));
 
@@ -19,7 +20,7 @@ router.post("/register", authController.register);
 // });
 
 // login
-
+router.post("/login", authController.login);
 // logout
 // refresh
 
