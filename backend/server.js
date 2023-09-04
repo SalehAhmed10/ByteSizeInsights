@@ -9,6 +9,8 @@ const errorHandler = require("./middlewares/errorHandler");
 
 const cookieParser = require("cookie-parser");
 
+app.use("/storage", express.static("storage"));
+
 // app.use(router);
 
 // app.use(express.json());
