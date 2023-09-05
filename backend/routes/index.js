@@ -31,6 +31,11 @@ router.post("/logout", auth, authController.logout);
 router.get("/refresh", authController.refresh);
 
 // blog
+// CRUD
+// read all blogs
+// read blog by id
+// update
+// delete
 
 // create
 router.post("/blog", auth, blogController.create);
@@ -46,12 +51,6 @@ router.put("/blog", auth, blogController.update);
 
 // delete
 router.delete("/blog/:id", auth, blogController.delete);
-
-// CRUD
-// read all blogs
-// read blog by id
-// update
-// delete
 
 // comment
 // create comment
